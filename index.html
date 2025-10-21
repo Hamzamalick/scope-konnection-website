@@ -14,7 +14,7 @@
   <body>
     <main>
       <!-- Hero Section -->
-      <secion class="hero fade-up">
+      <section class="hero fade-up">
         <!-- Header -->
         <header id="home" class="container">
           <nav>
@@ -61,7 +61,6 @@
             </div>
           </div>
           <div class="hero-right">
-            <!-- <img src="./Images/Ellipse 14.png" alt=""> -->
             <video
               loop
               muted
@@ -70,7 +69,7 @@
             ></video>
           </div>
         </div>
-      </secion>
+      </section>
 
       <!-- Explore Section -->
       <section id="services" class="explore-sec container fade-up">
@@ -122,14 +121,14 @@
               time.
             </p>
           </div>
-          <div class="box box5">
+          <div class="box">
             <div class="icon">
               <img src="./Images/calendar.png" alt="" />
             </div>
             <h3>Calendar & Scheduling</h3>
             <p>Manage tasks, meetings, and reminders from one dashboard.</p>
           </div>
-          <div class="box box5">
+          <div class="box">
             <div class="icon">
               <img src="./Images/comment.png" alt="" />
             </div>
@@ -190,54 +189,53 @@
       </section>
 
       <!-- Contact Us -->
-      <section id="about" class="contact-us fade-up">
-        <div class="contact-us-content">
+      <section id="about" class="contact-section fade-up">
+        <div class="contact-content container">
           <div class="contact-left">
-            <div class="contact-headings">
-              <h1>Get in Touch</h1>
-              <p>
-                Have questions or want a demo? <br />
-                Our team is here to help.
-              </p>
+            <!-- Contact Signup Form Section -->
+            <div class="signup-form-container">
+              <form id="signupForm" method="post" action="process_form.php" class="custom-signup-form">
+                <div class="form-group">
+                  <label for="first_name">First Name</label>
+                  <input type="text" id="first_name" name="first_name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="second_name">Second Name</label>
+                  <input type="text" id="second_name" name="second_name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                  <button type="submit" class="submit-button">Submit</button>
+                </div>
+              </form>
+              
+              <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+                Thank you for your submission! We will get back to you soon.
+              </div>
             </div>
-            <form class="contact-form">
-              <div class="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="send-btn">Send</button>
-            </form>
-
+            
             <div class="contact-info">
               <h2>Contact Info</h2>
               <div class="link">
                 <img src="./Images/fi_mail.png" alt="" />
-                <a href="mailto:info@scopesoftware.co.uk"
-                  >info@scopesoftware.co.uk</a
-                >
+                <a href="mailto:info@scopesoftware.co.uk">info@scopesoftware.co.uk</a>
               </div>
-              <!-- <div class="social-icons">
-                <a target="_blank" href="">
-                  <img src="./Images/facebook.png" alt=""
-                /></a>
-                <a target="_blank" href="">
-                  <img src="./Images/twitter.png" alt=""
-                /></a>
-                <a target="_blank" href="">
-                  <img src="./Images/instagram.png" alt=""
-                /></a>
-              </div> -->
             </div>
           </div>
           <div class="contact-right">
@@ -246,11 +244,7 @@
         </div>
         <footer>
           <p>
-            <a
-              target="_blank"
-              href="https://www.scopesoftwareonline.com/privacy-policy/"
-              >Privacy Policy</a
-            >
+            <a target="_blank" href="https://www.scopesoftwareonline.com/privacy-policy/">Privacy Policy</a>
           </p>
           <p>| © 2025 Scope Software. All Rights Reserved.</p>
         </footer>
