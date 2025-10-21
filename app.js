@@ -6,7 +6,7 @@ menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
-// ANimations
+// Animations
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -28,14 +28,17 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const target = document.querySelector(link.getAttribute("href"));
-    target.scrollIntoView({ behavior: "smooth" });
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
 
-    // Optional: close mobile menu after click
-    document.querySelector(".nav-links").classList.remove("active");
-    document.getElementById("menuToggle").classList.remove("active");
+    // Close mobile menu after click
+    navLinks.classList.remove("active");
+    menuToggle.classList.remove("active");
   });
 });
-// Form submission handling
+
+// Contact Form Handling
 document.addEventListener('DOMContentLoaded', function() {
     const signupForm = document.getElementById('signupForm');
     const thankYouMessage = document.getElementById('thankYouMessage');
@@ -47,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show loading state
             const submitButton = signupForm.querySelector('.submit-button');
             const originalText = submitButton.textContent;
+            
             submitButton.textContent = 'Sending...';
             submitButton.disabled = true;
             
@@ -58,20 +62,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 method: 'POST',
                 body: formData
             })
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
             .then(data => {
-                if (data === 'success') {
+                if (data.trim() === 'success') {
                     // Show thank you message and hide form
                     signupForm.style.display = 'none';
                     thankYouMessage.style.display = 'block';
                     
                     // Scroll to thank you message
-                    thankYouMessage.scrollIntoView({ behavior: 'smooth' });
+                    thankYouMessage.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
                 } else {
-                    // Show errors
-                    alert('Error: ' + data);
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
+                    throw new Error(data || 'Unknown error occurred');
                 }
             })
             .catch(error => {
@@ -82,4 +91,25 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    
+    // Add interactive effects to form inputs
+    const formInputs = document.querySelectorAll('.form-group input, .form-group textarea');
+    
+    formInputs.forEach(input => {
+        // Add focus effect
+        input.addEventListener('focus', function() {
+            this.parentElement.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', function() {
+            if (!this.value) {
+                this.parentElement.classList.remove('focused');
+            }
+        });
+        
+        // Initialize focused state if input has value
+        if (input.value) {
+            input.parentElement.classList.add('focused');
+        }
+    });
 });
