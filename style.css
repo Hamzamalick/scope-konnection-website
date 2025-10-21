@@ -32,7 +32,7 @@ body {
 /* Header base */
 header {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 110px;
 }
 
@@ -194,7 +194,7 @@ nav {
   font-weight: 400;
 }
 .hero-left p {
-  margin-top: 29px;
+  margin-top: 30px;
   margin-bottom: 40px;
   width: 500px;
   font-size: 23px;
