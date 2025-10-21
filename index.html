@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Images/KonnectionLogoUpdated (1) 1.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Home Page</title>
+    <title>Scope-Konnection</title>
   </head>
   <body>
     <main>
@@ -21,22 +26,16 @@
 
             <ul class="nav-links">
               <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#why-choose">Why Choose</a></li>
+              <li><a href="#services">Features</a></li>
+              <li><a href="#why-choose">Why Konnection</a></li>
               <!-- CTA inside nav for mobile -->
               <li class="mobile-cta">
-                <a class="cta-btn" href="mailto:info@scopesoftware.co.uk"
-                  >Contact</a
-                >
+                <a class="cta-btn" href="#about">Contact Us</a>
               </li>
             </ul>
 
-            <!-- CTA for desktop -->
-            <a
-              class="cta-btn desktop-cta"
-              href="mailto:info@scopesoftware.co.uk"
-              >Contact</a
-            >
+            <!-- Contact Us button for desktop -->
+            <a class="cta-btn desktop-cta" href="#about">Contact Us</a>
 
             <!-- Menu icon -->
             <div class="menu-toggle" id="menuToggle">
@@ -57,17 +56,8 @@
             </p>
 
             <div class="contact-btns">
-              <a
-                target="_blank"
-                class="cta-btn"
-                href="https://konnection.lovable.app/auth"
-                >Request a Demo</a
-              >
-              <a
-                class="cta-btn cta-btn-black"
-                href="mailto:info@scopesoftware.co.uk"
-                >Contact</a
-              >
+              <!-- Request a Demo button -->
+              <a class="cta-btn request-demo" href="#about">Request a Demo</a>
             </div>
           </div>
           <div class="hero-right">
@@ -116,7 +106,7 @@
             <div class="icon">
               <img src="./Images/Group 23.png" alt="" />
             </div>
-            <h3>Analytics Dashboard</h3>
+            <h3>Automation Flows</h3>
             <p>
               Automate follow-ups, reminders, and campaigns via Email, SMS, and
               WhatsApp.
@@ -199,6 +189,7 @@
         </div>
       </section>
 
+      <!-- Contact Us -->
       <section id="about" class="contact-us fade-up">
         <div class="contact-us-content">
           <div class="contact-left">
@@ -209,15 +200,34 @@
                 Our team is here to help.
               </p>
             </div>
+            <form class="contact-form">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="send-btn">Send</button>
+            </form>
+
             <div class="contact-info">
               <h2>Contact Info</h2>
               <div class="link">
-                <img src="./" alt="" />
+                <img src="./Images/fi_mail.png" alt="" />
                 <a href="mailto:info@scopesoftware.co.uk"
                   >info@scopesoftware.co.uk</a
                 >
               </div>
-              <div class="social-icons">
+              <!-- <div class="social-icons">
                 <a target="_blank" href="">
                   <img src="./Images/facebook.png" alt=""
                 /></a>
@@ -227,7 +237,7 @@
                 <a target="_blank" href="">
                   <img src="./Images/instagram.png" alt=""
                 /></a>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="contact-right">
@@ -235,8 +245,14 @@
           </div>
         </div>
         <footer>
-          <p><span>Privacy Policy | Terms of Use</span></p>
-          <p>© 2025 Scope Software. All Rights Reserved.</p>
+          <p>
+            <a
+              target="_blank"
+              href="https://www.scopesoftwareonline.com/privacy-policy/"
+              >Privacy Policy</a
+            >
+          </p>
+          <p>| © 2025 Scope Software. All Rights Reserved.</p>
         </footer>
       </section>
     </main>

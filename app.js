@@ -6,6 +6,7 @@ menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
+// ANimations
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
