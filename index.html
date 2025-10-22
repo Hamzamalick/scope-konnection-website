@@ -1,342 +1,263 @@
+index.html
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Images/KonnectionLogoUpdated (1) 1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Scope-Konnection</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <!-- Header -->
-            <header id="home" class="container">
-                <nav>
-                    <div class="logo">
-                        <a href="./index.html">
-                            <img src="./Images/KonnectionLogoUpdated (1) 1.png" alt="Konnection Logo">
-                        </a>
-                    </div>
-
-                    <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Features</a></li>
-                        <li><a href="#why-choose">Why Konnection?</a></li>
-                        <li class="mobile-cta">
-                            <a class="cta-btn" href="#about">Contact Us</a>
-                        </li>
-                    </ul>
-
-                    <a class="cta-btn desktop-cta" href="#about">Contact Us</a>
-
-                    <div class="menu-toggle" id="menuToggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </nav>
-            </header>
-
-            <div class="hero-content container fade-up">
-                <div class="hero-left">
-                    <h1>Konnection <span>CRM</span></h1>
-                    <h2>Connecting People Smarter</h2>
-                    <p>
-                        A next-generation CRM designed to connect businesses with their
-                        clients more intelligently and personally.
-                    </p>
-
-                    <div class="contact-btns">
-                        <a class="cta-btn request-demo" href="#about">Request a Demo</a>
-                    </div>
-                </div>
-                <div class="hero-right">
-                    <video loop muted autoplay src="./video/hero-video.mp4"></video>
-                </div>
-            </div>
-        </section>
-
-        <!-- Members -->
-        <section class="members fade-up">
-            <div class="members-content container">
-                <div class="m-left">
-                    <h1>
-                        Know Your Members <br>
-                        <span>Powered by KAI</span>
-                    </h1>
-                    <h2>(Konnection AI)</h2>
-                    <p>
-                        Explore your members' behavior, engagement, and retention with
-                        AI-driven insights.
-                    </p>
-                </div>
-
-                <div class="m-right">
-                    <!-- Ask KAI Card -->
-                    <div class="card ask-card">
-                        <h3>Ask KAI</h3>
-                        <input
-                            type="text"
-                            placeholder="How many members joined in the last 30 days?"
-                        >
-                        <div class="btn-group">
-                            <button class="btn ask-btn">Ask KAI</button>
-                            <button class="btn clear-btn">Clear</button>
-                            <button class="btn debug-btn">Show Debug</button>
-                        </div>
-                        <div class="example-queries">
-                            <p>Example queries</p>
-                            <button>Members by gender in last 90 days for Dubai</button>
-                            <button>Which location has the best retention?</button>
-                            <button>Active members by plan for last month</button>
-                            <button>Show me all male members</button>
-                        </div>
-                    </div>
-
-                    <!-- Response Card -->
-                    <div class="card response-card">
-                        <h3>Response</h3>
-                        <p>
-                            In the last <strong>30 days</strong>,
-                            <strong>842 new members joined</strong>. That's a
-                            <span class="highlight">12% increase</span> compared to the
-                            previous month.
-                        </p>
-                        <div class="bar-chart">
-                            <div class="bar green"></div>
-                            <div class="bar blue"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Explore Section -->
-        <section id="services" class="explore-sec container fade-up">
-            <div class="explore-headings">
-                <h1>Explore the Core Modules</h1>
-                <p>
-                    Everything you need to manage leads, automate engagement, and grow
-                    smarter — all built into one platform.
-                </p>
+      <!-- Hero Section -->
+      <secion class="hero fade-up">
+        <!-- Header -->
+        <header id="home" class="container">
+          <nav>
+            <div class="logo">
+              <a href="./index.html">
+                <img src="./Images/KonnectionLogoUpdated (1) 1.png" alt="" />
+              </a>
             </div>
 
-            <div class="explore-boxes">
-                <div class="box">
-                    <div class="icon">
-                        <img src="./Images/Group 22.png" alt="Leads Management Icon">
-                    </div>
-                    <h3>Leads Management</h3>
-                    <p>
-                        Capture, track, and assign leads with custom pipelines and
-                        follow-up reminders.
-                    </p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <img src="./Images/Vector.png" alt="Pipeline Tracking Icon">
-                    </div>
-                    <h3>Pipeline Tracking</h3>
-                    <p>
-                        Drag-and-drop stages with real-time KPIs and conversion analytics.
-                    </p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <img src="./Images/Group 23.png" alt="Automation Flows Icon">
-                    </div>
-                    <h3>Automation Flows</h3>
-                    <p>
-                        Automate follow-ups, reminders, and campaigns via Email, SMS, and
-                        WhatsApp.
-                    </p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <img src="./Images/checkerboard.png" alt="Analytics Dashboard Icon">
-                    </div>
-                    <h3>Analytics Dashboard</h3>
-                    <p>
-                        View performance insights, trends, and team leaderboards in real
-                        time.
-                    </p>
-                </div>
-                <div class="box box5">
-                    <div class="icon">
-                        <img src="./Images/calendar.png" alt="Calendar & Scheduling Icon">
-                    </div>
-                    <h3>Calendar & Scheduling</h3>
-                    <p>Manage tasks, meetings, and reminders from one dashboard.</p>
-                </div>
-                <div class="box box5">
-                    <div class="icon">
-                        <img src="./Images/comment.png" alt="Templates & Messaging Icon">
-                    </div>
-                    <h3>Templates & Messaging</h3>
-                    <p>Use ready-to-send templates for personalized communication.</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <img src="./Images/setting-two.png" alt="Integrations Icon">
-                    </div>
-                    <h3>Integrations</h3>
-                    <p>
-                        Connect seamlessly with Sentinel Fitness, WhatsApp, SMS, and
-                        email.
-                    </p>
-                </div>
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Features</a></li>
+              <li><a href="#why-choose">Why Konnection</a></li>
+              <!-- CTA inside nav for mobile -->
+              <li class="mobile-cta">
+                <a class="cta-btn" href="#about">Contact Us</a>
+              </li>
+            </ul>
+
+            <!-- Contact Us button for desktop -->
+            <a class="cta-btn desktop-cta" href="#about">Contact Us</a>
+
+            <!-- Menu icon -->
+            <div class="menu-toggle" id="menuToggle">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-        </section>
+          </nav>
+        </header>
 
-        <!-- Why Choose -->
-        <section id="why-choose" class="why-choose fade-up">
-            <div class="why-choose-content container">
-                <div class="why-choose-image">
-                    <img src="./Images/Rectangle 11.png" alt="Why Choose Konnection">
-                </div>
-                <div class="why-choose-info">
-                    <h1>
-                        Why Choose <br>
-                        Konnection CRM?
-                    </h1>
-                    <div class="elem">
-                        <img src="./Images/tick.png" alt="Tick Icon">
-                        <p>Designed specifically for the fitness industry.</p>
-                    </div>
-                    <div class="elem">
-                        <img src="./Images/tick.png" alt="Tick Icon">
-                        <p>Seamless integration with Sentinel Fitness software.</p>
-                    </div>
-                    <div class="elem">
-                        <img src="./Images/tick.png" alt="Tick Icon">
-                        <p>Combines CRM, automation, and analytics in one solution.</p>
-                    </div>
-                    <div class="elem">
-                        <img src="./Images/tick.png" alt="Tick Icon">
-                        <p>Scalable across multiple locations, roles, and channels.</p>
-                    </div>
-                </div>
+        <div class="hero-content container">
+          <div class="hero-left">
+            <h1>Konnection <span>CRM</span></h1>
+            <h2>Connecting People Smarter</h2>
+            <p>
+              A next-generation CRM designed to connect businesses with their
+              clients more intelligently and personally.
+            </p>
+
+            <div class="contact-btns">
+              <!-- Request a Demo button -->
+              <a class="cta-btn request-demo" href="#about">Request a Demo</a>
             </div>
-        </section>
+          </div>
+          <div class="hero-right">
+            <!-- <img src="./Images/Ellipse 14.png" alt=""> -->
+            <video
+              loop
+              muted
+              autoplay
+              src="./video/Final Render with out demo.mp4"
+            ></video>
+          </div>
+        </div>
+      </secion>
 
-        <!-- Contact Us -->
-        <section id="about" class="contact-us fade-up">
-            <div class="contact-us-content">
-                <div class="contact-left">
-                    <div class="contact-headings">
-                        <h1>Get in Touch</h1>
-                        <p>
-                            Have questions or want a demo? <br>
-                            Our team is here to help.
-                        </p>
-                    </div>
-                    
-                    <!-- Working Contact Form -->
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input
-                                    type="text"
-                                    name="first_name"
-                                    id="first_name"
-                                    placeholder="Your First Name"
-                                    required
-                                >
-                            </div>
-                            <div class="form-group">
-                                <input
-                                    type="text"
-                                    name="last_name"
-                                    id="last_name"
-                                    placeholder="Your Last Name"
-                                    required
-                                >
-                            </div>
-                        </div>
+      <!-- Explore Section -->
+      <section id="services" class="explore-sec container fade-up">
+        <div class="explore-headings">
+          <h1>Explore the Core Modules</h1>
+          <p>
+            Everything you need to manage leads, automate engagement, and grow
+            smarter — all built into one platform.
+          </p>
+        </div>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="Your Email"
-                                    required
-                                >
-                            </div>
-                            <div class="form-group">
-                                <input
-                                    type="tel"
-                                    name="phone"
-                                    id="phone"
-                                    placeholder="Your Phone Number"
-                                    required
-                                >
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea
-                                name="message"
-                                id="message"
-                                placeholder="Your Message"
-                                required
-                            ></textarea>
-                        </div>
-
-                        <button type="submit" class="send-btn">Send Message</button>
-                    </form>
-                    
-                    <div class="contact-info">
-                        <h2>Contact Info</h2>
-                        <div class="link">
-                            <img src="./Images/fi_mail.png" alt="Email Icon">
-                            <a href="mailto:info@scopesoftware.co.uk">info@scopesoftware.co.uk</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <img src="./Images/Group 33.png" alt="Contact Image">
-                </div>
+        <div class="explore-boxes">
+          <div class="box">
+            <div class="icon">
+              <img src="./Images/Group 22.png" alt="" />
             </div>
-            <footer>
-                <p>
-                    <a href="./privacy.html">Privacy Policy</a>
-                </p>
-                <p>| © 2025 Scope Software. All Rights Reserved.</p>
-            </footer>
-        </section>
+            <h3>Leads Management</h3>
+            <p>
+              Capture, track, and assign leads with custom pipelines and
+              follow-up reminders.
+            </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img src="./Images/Vector.png" alt="" />
+            </div>
+            <h3>Pipeline Tracking</h3>
+            <p>
+              Drag-and-drop stages with real-time KPIs and conversion analytics.
+            </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img src="./Images/Group 23.png" alt="" />
+            </div>
+            <h3>Automation Flows</h3>
+            <p>
+              Automate follow-ups, reminders, and campaigns via Email, SMS, and
+              WhatsApp.
+            </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img src="./Images/checkerboard.png" alt="" />
+            </div>
+            <h3>Analytics Dashboard</h3>
+            <p>
+              View performance insights, trends, and team leaderboards in real
+              time.
+            </p>
+          </div>
+          <div class="box box5">
+            <div class="icon">
+              <img src="./Images/calendar.png" alt="" />
+            </div>
+            <h3>Calendar & Scheduling</h3>
+            <p>Manage tasks, meetings, and reminders from one dashboard.</p>
+          </div>
+          <div class="box box5">
+            <div class="icon">
+              <img src="./Images/comment.png" alt="" />
+            </div>
+            <h3>Templates & Messaging</h3>
+            <p>Use ready-to-send templates for personalized communication.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img src="./Images/concept-sharing.png" alt="" />
+            </div>
+            <h3>Access Control</h3>
+            <p>
+              Set role-based permissions and ensure secure team collaboration.
+            </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img src="./Images/setting-two.png" alt="" />
+            </div>
+            <h3>Integrations</h3>
+            <p>
+              Connect seamlessly with Sentinel Fitness, WhatsApp, SMS, and
+              email.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose -->
+      <section id="why-choose" class="why-choose fade-up">
+        <div class="why-choose-content container">
+          <div class="why-choose-image">
+            <img src="./Images/Rectangle 11.png" alt="" />
+          </div>
+          <div class="why-choose-info">
+            <h1>
+              Why Choose <br />
+              Konnection CRM?
+            </h1>
+            <div class="elem">
+              <img src="./Images/tick.png" alt="" />
+              <p>Designed specifically for the fitness industry.</p>
+            </div>
+            <div class="elem">
+              <img src="./Images/tick.png" alt="" />
+              <p>Seamless integration with Sentinel Fitness software.</p>
+            </div>
+            <div class="elem">
+              <img src="./Images/tick.png" alt="" />
+              <p>Combines CRM, automation, and analytics in one solution.</p>
+            </div>
+            <div class="elem">
+              <img src="./Images/tick.png" alt="" />
+              <p>Scalable across multiple locations, roles, and channels.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Us -->
+      <section id="about" class="contact-us fade-up">
+        <div class="contact-us-content">
+          <div class="contact-left">
+            <div class="contact-headings">
+              <h1>Get in Touch</h1>
+              <p>
+                Have questions or want a demo? <br />
+                Our team is here to help.
+              </p>
+            </div>
+            <form class="contact-form">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="send-btn">Send</button>
+            </form>
+
+            <div class="contact-info">
+              <h2>Contact Info</h2>
+              <div class="link">
+                <img src="./Images/fi_mail.png" alt="" />
+                <a href="mailto:info@scopesoftware.co.uk"
+                  >info@scopesoftware.co.uk</a
+                >
+              </div>
+              <!-- <div class="social-icons">
+                <a target="_blank" href="">
+                  <img src="./Images/facebook.png" alt=""
+                /></a>
+                <a target="_blank" href="">
+                  <img src="./Images/twitter.png" alt=""
+                /></a>
+                <a target="_blank" href="">
+                  <img src="./Images/instagram.png" alt=""
+                /></a>
+              </div> -->
+            </div>
+          </div>
+          <div class="contact-right">
+            <img src="./Images/Group 33.png" alt="" />
+          </div>
+        </div>
+        <footer>
+          <p>
+            <a
+              target="_blank"
+              href="https://www.scopesoftwareonline.com/privacy-policy/"
+              >Privacy Policy</a
+            >
+          </p>
+          <p>| © 2025 Scope Software. All Rights Reserved.</p>
+        </footer>
+      </section>
     </main>
-    
-    <script>
-        // Contact form handling
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contactForm');
-            
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Get form values
-                const firstName = document.getElementById('first_name').value;
-                const lastName = document.getElementById('last_name').value;
-                const email = document.getElementById('email').value;
-                const phone = document.getElementById('phone').value;
-                const message = document.getElementById('message').value;
-                
-                // Create mailto link with form data
-                const subject = "Contact Form Submission - Konnection CRM";
-                const body = `First Name: ${firstName}%0D%0ALast Name: ${lastName}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMessage: ${message}`;
-                
-                // Open default email client with pre-filled data
-                window.location.href = `mailto:info@scopesoftware.co.uk?subject=${subject}&body=${body}`;
-                
-                // Show confirmation message
-                alert('Thank you for your message! Your email client will open with a pre-filled email. Please click send to complete your submission.');
-                
-                // Reset form
-                contactForm.reset();
-            });
-        });
-    </script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
