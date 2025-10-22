@@ -14,7 +14,7 @@
   <body>
     <main>
       <!-- Hero Section -->
-      <secion class="hero">
+      <secion class="hero fade-up">
         <!-- Header -->
         <header id="home" class="container">
           <nav>
@@ -27,7 +27,7 @@
             <ul class="nav-links">
               <li><a href="#about">About</a></li>
               <li><a href="#services">Features</a></li>
-              <li><a href="#why-choose">Why Konnection?</a></li>
+              <li><a href="#why-choose">Why Konnection</a></li>
               <!-- CTA inside nav for mobile -->
               <li class="mobile-cta">
                 <a class="cta-btn" href="#about">Contact Us</a>
@@ -46,7 +46,7 @@
           </nav>
         </header>
 
-        <div class="hero-content container fade-up">
+        <div class="hero-content container">
           <div class="hero-left">
             <h1>Konnection <span>CRM</span></h1>
             <h2>Connecting People Smarter</h2>
@@ -62,65 +62,15 @@
           </div>
           <div class="hero-right">
             <!-- <img src="./Images/Ellipse 14.png" alt=""> -->
-            <video loop muted autoplay src="./video/hero-video.mp4"></video>
+            <video
+              loop
+              muted
+              autoplay
+              src="./video/Final Render with out demo.mp4"
+            ></video>
           </div>
         </div>
       </secion>
-
-      <!-- Members -->
-      <section class="members fade-up">
-        <div class="members-content container">
-          <div class="m-left">
-            <h1>
-              Know Your Members <br />
-              <span>Powered by KAI</span>
-            </h1>
-            <h2>(Konnection AI)</h2>
-            <p>
-              Explore your members’ behavior, engagement, and retention with
-              AI-driven insights.
-            </p>
-          </div>
-
-          <div class="m-right">
-            <!-- Ask KAI Card -->
-            <div class="card ask-card">
-              <h3>Ask KAI</h3>
-              <input
-                type="text"
-                placeholder="How many members joined in the last 30 days?"
-              />
-              <div class="btn-group">
-                <button class="btn ask-btn">Ask KAI</button>
-                <button class="btn clear-btn">Clear</button>
-                <button class="btn debug-btn">Show Debug</button>
-              </div>
-              <div class="example-queries">
-                <p>Example queries</p>
-                <button>Members by gender in last 90 days for Dubai</button>
-                <button>Which location has the best retention?</button>
-                <button>Active members by plan for last month</button>
-                <button>Show me all male members</button>
-              </div>
-            </div>
-
-            <!-- Response Card -->
-            <div class="card response-card">
-              <h3>Response</h3>
-              <p>
-                In the last <strong>30 days</strong>,
-                <strong>842 new members joined</strong>. That’s a
-                <span class="highlight">12% increase</span> compared to the
-                previous month.
-              </p>
-              <div class="bar-chart">
-                <div class="bar green"></div>
-                <div class="bar blue"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- Explore Section -->
       <section id="services" class="explore-sec container fade-up">
@@ -186,7 +136,7 @@
             <h3>Templates & Messaging</h3>
             <p>Use ready-to-send templates for personalized communication.</p>
           </div>
-          <!-- <div class="box">
+          <div class="box">
             <div class="icon">
               <img src="./Images/concept-sharing.png" alt="" />
             </div>
@@ -194,7 +144,7 @@
             <p>
               Set role-based permissions and ensure secure team collaboration.
             </p>
-          </div> -->
+          </div>
           <div class="box">
             <div class="icon">
               <img src="./Images/setting-two.png" alt="" />
@@ -251,44 +201,14 @@
               </p>
             </div>
             <form class="contact-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="first_name"
-                    placeholder="Your First Name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="last_name"
-                    placeholder="Your Last Name"
-                    required
-                  />
-                </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
               </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Your Phone Number"
-                    required
-                  />
-                </div>
-              </div>
-
               <div class="form-group">
                 <textarea
                   name="message"
@@ -296,13 +216,10 @@
                   required
                 ></textarea>
               </div>
-
               <button type="submit" class="send-btn">Send</button>
             </form>
-            <form action="mailto:zarghamabass2222@gmail.com" method="post" enctype="text/plain">
-    <!-- Your form fields here -->
-</form>
-          <div class="contact-info">
+
+            <div class="contact-info">
               <h2>Contact Info</h2>
               <div class="link">
                 <img src="./Images/fi_mail.png" alt="" />
@@ -329,7 +246,11 @@
         </div>
         <footer>
           <p>
-            <a href="./privacy.html">Privacy Policy</a>
+            <a
+              target="_blank"
+              href="https://www.scopesoftwareonline.com/privacy-policy/"
+              >Privacy Policy</a
+            >
           </p>
           <p>| © 2025 Scope Software. All Rights Reserved.</p>
         </footer>
