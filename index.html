@@ -186,15 +186,6 @@
             <h3>Templates & Messaging</h3>
             <p>Use ready-to-send templates for personalized communication.</p>
           </div>
-          <!-- <div class="box">
-            <div class="icon">
-              <img src="./Images/concept-sharing.png" alt="" />
-            </div>
-            <h3>Access Control</h3>
-            <p>
-              Set role-based permissions and ensure secure team collaboration.
-            </p>
-          </div> -->
           <div class="box">
             <div class="icon">
               <img src="./Images/setting-two.png" alt="" />
@@ -251,13 +242,14 @@
               </p>
             </div>
             
-            <!-- Corrected Form -->
-            <form class="contact-form" action="mailto:info@scopesoftware.co.uk" method="POST" enctype="text/plain">
+            <!-- Working Contact Form -->
+            <form class="contact-form" id="contactForm">
               <div class="form-row">
                 <div class="form-group">
                   <input
                     type="text"
                     name="first_name"
+                    id="first_name"
                     placeholder="Your First Name"
                     required
                   />
@@ -266,6 +258,7 @@
                   <input
                     type="text"
                     name="last_name"
+                    id="last_name"
                     placeholder="Your Last Name"
                     required
                   />
@@ -277,6 +270,7 @@
                   <input
                     type="email"
                     name="email"
+                    id="email"
                     placeholder="Your Email"
                     required
                   />
@@ -285,6 +279,7 @@
                   <input
                     type="tel"
                     name="phone"
+                    id="phone"
                     placeholder="Your Phone Number"
                     required
                   />
@@ -294,12 +289,13 @@
               <div class="form-group">
                 <textarea
                   name="message"
+                  id="message"
                   placeholder="Your Message"
                   required
                 ></textarea>
               </div>
 
-              <button type="submit" class="send-btn">Send</button>
+              <button type="submit" class="send-btn">Send Message</button>
             </form>
             
             <div class="contact-info">
@@ -307,7 +303,7 @@
               <div class="link">
                 <img src="./Images/fi_mail.png" alt="" />
                 <a href="mailto:zarghamabass2222@gmail.com"
-                  >zarghamabass2222@gmail.com</a
+                  >zarghamabass2222@gmail.comk</a
                 >
               </div>
             </div>
@@ -325,6 +321,36 @@
         </footer>
       </section>
     </main>
-    <script src="app.js"></script>
+    
+    <script>
+      // Contact form handling
+      document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Get form values
+          const firstName = document.getElementById('first_name').value;
+          const lastName = document.getElementById('last_name').value;
+          const email = document.getElementById('email').value;
+          const phone = document.getElementById('phone').value;
+          const message = document.getElementById('message').value;
+          
+          // Create mailto link with form data
+          const subject = "Contact Form Submission - Konnection CRM";
+          const body = `First Name: ${firstName}%0D%0ALast Name: ${lastName}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMessage: ${message}`;
+          
+          // Open default email client with pre-filled data
+          window.location.href = `mailto:info@scopesoftware.co.uk?subject=${subject}&body=${body}`;
+          
+          // Show confirmation message
+          alert('Thank you for your message! Your email client will open with a pre-filled email. Please click send to complete your submission.');
+          
+          // Reset form
+          contactForm.reset();
+        });
+      });
+    </script>
   </body>
 </html>
