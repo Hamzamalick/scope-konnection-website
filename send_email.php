@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
     
     // Email details
-    $to = "info@scopesoftware.co.uk";
+    $to = "zarghamabass2222@gmail.com";
     $subject = "New Contact Form Submission from $first_name $last_name";
     
     // Email content
