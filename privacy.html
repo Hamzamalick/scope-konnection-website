@@ -9,7 +9,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Privacy & Policy</title>
   </head>
   <body>
     <!-- Header -->
@@ -22,9 +22,6 @@
         </div>
 
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Features</a></li>
-          <li><a href="#why-choose">Why Konnection</a></li>
           <!-- CTA inside nav for mobile -->
           <li class="mobile-cta">
             <a class="cta-btn" href="#about">Contact Us</a>
@@ -45,6 +42,7 @@
 
     <!-- Privacy -->
     <section class="privacy fade-up">
+      <h1>Privacy Policy</h1>
       <p>
         The team at Scope Software Solutions work hard to make sure you have
         easy and efficient access to your personal data, but we’re also
@@ -133,6 +131,99 @@
       </p>
     </section>
 
+     <!-- Contact Us -->
+     <section id="about" class="contact-us fade-up">
+      <div class="contact-us-content">
+        <div class="contact-left">
+          <div class="contact-headings">
+            <h1>Get in Touch</h1>
+            <p>
+              Have questions or want a demo? <br />
+              Our team is here to help.
+            </p>
+          </div>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="first_name"
+                  placeholder="Your First Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="last_name"
+                  placeholder="Your Last Name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Your Phone Number"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">Send</button>
+          </form>
+
+          <div class="contact-info">
+            <h2>Contact Info</h2>
+            <div class="link">
+              <img src="./Images/fi_mail.png" alt="" />
+              <a href="mailto:info@scopesoftware.co.uk"
+                >info@scopesoftware.co.uk</a
+              >
+            </div>
+            <!-- <div class="social-icons">
+              <a target="_blank" href="">
+                <img src="./Images/facebook.png" alt=""
+              /></a>
+              <a target="_blank" href="">
+                <img src="./Images/twitter.png" alt=""
+              /></a>
+              <a target="_blank" href="">
+                <img src="./Images/instagram.png" alt=""
+              /></a>
+            </div> -->
+          </div>
+        </div>
+        <div class="contact-right">
+          <img src="./Images/Group 33.png" alt="" />
+        </div>
+      </div>
+      <footer>
+        <p>
+          <a href="./privacy.html">Privacy Policy</a>
+        </p>
+        <p>| © 2025 Scope Software. All Rights Reserved.</p>
+      </footer>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>

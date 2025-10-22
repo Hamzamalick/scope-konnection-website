@@ -1037,6 +1037,12 @@ footer p {
   font-size: 16px;
 }
 
+.privacy h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+}
 .privacy h2 {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -1065,4 +1071,11 @@ footer p {
 
 .privacy a:hover {
   text-decoration: underline;
+}
+
+@media (max-width:768px) {
+  .privacy h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
 }
